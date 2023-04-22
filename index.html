@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/cabf443bd9.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!----------header--------------->
+    <div id="header">
+        
+         <div class="container">
+            <nav>
+                  <img src="images/logo.png" class="logo1">
+                  <ul id="sidemenu">
+                    <li>
+                        <a href="#header">Home</a>
+                        
+                    </li>
+                    <li>
+                        <a href="#about">About</a>
+                        
+                    </li>
+                    <li>
+                        <a href="#services">Project</a>
+                        
+                    </li>
+                    <li>
+                        <a href="#contact">Contact</a>
+                        
+                    </li>
+                    <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+                  </ul>
+                  <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header_text">
+                <p>Front-End Developer</p>
+                <h1>Hey, I'm <span>Shivansh Pathak</span><br>  From India</h1>
+            </div>
+        
+         </div>
+    </div>
+   
+   <!------------about--------------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/shivansh.png" width="50%">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="subtitle">About Me</h1> 
+                    <p>I'm a Web developer , UI/UX Designer and ML engineer who is creating and learning different awesome stuff.
+                        Let's start scrolling and learn About Me.
+                    
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                        
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            
+                            
+                            <li>
+                                <span>Front-end Developer</span><br><span>Web Development</span>
+                            </li>
+                            <br>
+                            <li>
+                                <span>UI&UX</span><br><span>Designing Web Interface</span>
+                            </li>
+                            <br>
+                            <li>
+                                <span>Artificial Intelligence and Machine Learning</span>
+                            </li>
+                        </ul>
+                    </div>  
+                    <br>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li>
+                                <span>8.65 CPI</span><br><span>Class 10</span><br><span>Green Fields School</span>
+                            </li>
+                            <br>
+                            <li>
+                                <span>8.56 CPI</span><br><span>Class 12</span><br><span>Green Fields School</span>
+                            </li>
+                            <br>
+                            <li>
+                                <span>7.8 CPI</span><br><span>3rd semester</span><br><span>GLA University</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <br>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!--------------project------------>
+<div id="services">
+    <div class="container">
+        <h1 class="subtitle">Projects</h1>
+        <div class="services-list">
+            <div>
+                <h2>Portfolio</h2>
+                <br>
+                <p>My Portfolio Website.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <h2>String Encryprion and Decryption</h2>
+                <br>
+                <p>This project is basically a type of cryptography technique use to encrypt or decrypt string data.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <h2>Food Court Web</h2>
+                <br>
+                <p>A basic frontend design for a Food Court.</p>
+                <a href="#">Learn more</a>
+            </div>
+        </div>
+        <div class="services-list">
+            <div>
+                <h2>Project4</h2>
+                <br>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus fugiat sed molestiae magnam, minima dicta. Non repellendus natus minima quia!</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <h2>Project5</h2>
+                <br>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus fugiat sed molestiae magnam, minima dicta. Non repellendus natus minima quia!</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <h2>Project6</h2>
+                <br>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus fugiat sed molestiae magnam, minima dicta. Non repellendus natus minima quia!</p>
+                <a href="#">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!------contact------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="subtitle">Contact Me</h1>
+                <p><i class="fa-solid fa-envelope"></i>pshivansh639@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i>7458079957</p>
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/_shivansh_._/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/shivansh-pathak-05b91721a/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/pshivansh639" target="_blank"><i class="fa-brands fa-github"></i></a>
+                </div>
+                <a href="" download class="btn btn2">Download Resume</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="message" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © Shivansh.</p>
+    </div>
+</div>
+
+    
+</body>
+<script>
+    var tablinks=document.getElementsByClassName("tab-links");
+    var tabcontents=document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+<script>
+    var sidemenu=document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right="0";
+    }
+    function closemenu(){
+        sidemenu.style.right="-200px";
+    }
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbxVYdIunclt3-a75MNPInGcLvoIE-t-VGbqDDEddfsBJROf_Q0KT40httGmYsKGdj7O/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg=document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML="Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML=""
+            },1000)
+            form.reset()
+        } )
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</html>
